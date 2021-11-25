@@ -5,53 +5,6 @@ from .models import Article
 import datetime
 
 
-dbtext_forum = {
-    "name": "test_article",
-    "title": "「红松林」|活动即将开启",
-    "time": "2021|10|10",
-    "classify": True,
-    "form": "text",
-    "content": """###[活动预告]故事集「红松林」即将开启
-{{{20211014_2_1.JPG
-<b>一、故事集「红松林」限时开启</b>
-<b>关卡开放时间：</b>10月15日 16:00 - 10月22日 03:59
-<br>
-<b>【兑奖处】兑换奖励：</b><red>时装【巫异盛宴 - 安息处的怪盗 - 卡达】、家具【灰毫的收件箱】、家具【远牙的风铃】、事相碎片、</red>家具零件、作战记录、招聘许可、高级素材等"""
-}
-
-dbimage_forum = {
-    "name": "test_image",
-    "title": "「特定干员|限时出率上升",
-    "time": "2021|10|10",
-    "classify": True,
-    "form": "image",
-    "content": "main.bmp"
-}
-
-image_forum = {
-    "form": "image",
-    "title": "特定干员|限时出率上升",
-    "image": "20211014_2_2.JPG"
-}
-
-text_forum = {
-    "form": "text",
-    "title": "「红松林」|活动即将开启",
-    "time": "2021年10月10",
-    "text_in_line": [
-        {"form": "title",
-         "content": "[活动预告]故事集「红松林」即将开启"},
-        {"form": "image",
-         "content": "20211014_2_1.JPG"},
-        {"form": "p",
-         "content": "<b>一、故事集「红松林」限时开启</b>"},
-        {"form": "br",
-         "content": "<br>"},
-        {"content": "<b>【兑奖处】兑换奖励：</b><red>时装【巫异盛宴 - 安息处的怪盗 - 卡达】、家具【灰毫的收件箱】、家具【远牙的风铃】、事相碎片、</red>家具零件、作战记录、招聘许可、高级素材等"}
-    ]
-}
-
-
 def fromDBtoObj(obj):
     output = {}
     if obj["form"] == "text":
