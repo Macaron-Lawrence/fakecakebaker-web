@@ -15,12 +15,11 @@ $(window).resize(function () {
     if($(window).height() <400){$(".show_bg").height(400)}
     else {$(".show_bg").height("100%")};
     if($(window).height() >400){
-        $(".scaleable").css("transform","scale(" + $(window).height()/window.screen.height +")")
+        $(".scaleable").css("transform","scale(" + $(window).height()/864 +")")
     }else{
-        $(".scaleable").css("transform","scale(" + 400/window.screen.height +")")
+        $(".scaleable").css("transform","scale(" + 400/864 +")")
     }
 });
-
 $(".index_li").scroll(()=>indexmask(".index_li"));
 
 let indexmask = (selector)=>{
@@ -44,6 +43,9 @@ let name_mapper = {
 }
 
 $(".index_li li").click(function (e) {
+    if($(this).hasClass("li_onselect")){
+        return
+    }
     e.preventDefault();
     $(".li_onselect").removeClass("li_onselect");
     $(this).addClass("li_onselect");

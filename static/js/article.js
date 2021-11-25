@@ -1,8 +1,8 @@
 
 
 $(document).ready(function () {
-    $(".bodyscale").css("transform","scale(" + $(window).height()/window.screen.height +")")
-    $(".bodyscale").css("height",100/$(window).height()*window.screen.height +"vh")
+    $(".bodyscale").css("transform","scale(" + $(window).height()/864 +")")
+    $(".bodyscale").css("height",100/$(window).height()*864 +"vh")
     $("#scroll").height(100*$('.text_main').height()/$('.text_main')[0].scrollHeight + "%");
     $(".text_main p").each(function(){
         // str = $(this).html(space_replace($(this).text()));
@@ -35,8 +35,8 @@ $(".text_main").scroll(function () {
 });
 
 $(window).resize(function () {
-    $(".bodyscale").css("transform","scale(" + $(window).height()/window.screen.height +")")
-    $(".bodyscale").css("height",100/$(window).height()*window.screen.height +"vh")
+    $(".bodyscale").css("transform","scale(" + $(window).height()/864 +")")
+    $(".bodyscale").css("height",100/$(window).height()*864 +"vh")
     $("#scroll").height(100*$('.text_main').height()/$('.text_main')[0].scrollHeight + "%")
 });
 
