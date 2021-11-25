@@ -1,0 +1,280 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/jquery_2.1.4_min.js"></script>
+    <title>Arknights</title>
+</head>
+<body>
+    <div class="show_bg">
+        <img id='bg' class="blur" alt="" src="/static/images/bg_lo.jpg">
+        <div class="container_shadow container"></div>
+        <div class="container">
+            <div class="banner">
+                <div class="banner_img"></div>
+                    <div name="tag_1" class="top_tag tag_onselect">
+                        <img src="/static/images/icon_ques.svg" alt="">
+                        <span>活动公告</span>
+                    </div>
+                    <div name="tag_2" class="top_tag tag_offselect">
+                        <img src="/static/images/icon_event.svg" alt="">
+                        <span>系统公告</span>
+                    </div>
+            </div>
+            <div class="index">
+                <div id="index_1" class="index_li">
+                    <li>
+                        <div class="index_hover"></div>
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">1</span>
+                            <span class="index_li_month scaleable">10月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>时代系列</span><br>
+                            <span>新装限时上架</span>
+                        </div>
+                    </li>
+                    <li name="test_article">
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">1</span>
+                            <span class="index_li_month scaleable">10月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>「红松林」</span><br>
+                            <span>活动即将开启</span>
+                        </div>
+                    </li>
+                    <li class="breakingnews">
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">1</span>
+                            <span class="index_li_month scaleable">10月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>【暇光微明】</span> <br>
+                                <span>复刻寻访开启</span>
+                    </li>
+                    <li name="test_image">
+                        <div class="index_hover"></div>
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">30</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>特定干员</span><br>
+                            <span>限时出率上升</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">27</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>玛莉娅·临光</span><br>
+                            <span>限时复刻开启</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">27</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>新人寻访特惠</span><br>
+                            <span>新装限时上架</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">27</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>新人寻访特惠</span><br>
+                            <span>新装限时上架</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">27</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>新人寻访特惠</span><br>
+                            <span>新装限时上架</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">27</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>新人寻访特惠</span><br>
+                            <span>新装限时上架</span>
+                        </div>
+                    </li>
+                </div>
+                <div id="index_2" class="index_li">
+                    <li>
+                        <div class="index_hover"></div>
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">13</span>
+                            <span class="index_li_month scaleable">10月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>10月13日</span><br>
+                            <span>闪断更新公告</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">2</span>
+                            <span class="index_li_month scaleable">9月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>「制作组通讯」</span><br>
+                            <span>#13期</span>
+                        </div>
+                    </li>
+                    <li class="breakingnews">
+                        <div class="index_hover"></div>
+
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">1</span>
+                            <span class="index_li_month scaleable">5月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>《明日方舟》</span> <br>
+                                <span>公测开启说明</span>
+                    </li>
+                    <li name="20211014_1">
+                        <div class="index_hover"></div>
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">1</span>
+                            <span class="index_li_month scaleable">5月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>《明日方舟》</span><br>
+                            <span>公平运营声明</span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <div class="article">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/static/js/main.js"></script>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script src="./static/js/jquery_2.1.4_min.js"></script>
+    <title>罗德岛蜜饼工坊·公告</title>
+</head>
+<body>
+    <div class="show_bg">
+        <img id='bg' class="blur" alt="" src="/static/images/bg_lo.jpg">
+        <div class="container_shadow container"></div>
+        <div class="container">
+            <div class="banner">
+                <div class="banner_img"></div>
+                    <div name="tag_1" class="top_tag tag_onselect">
+                        <img src="/static/images/icon_ques.svg" alt="">
+                        <span>活动公告</span>
+                    </div>
+                    <div name="tag_2" class="top_tag tag_offselect">
+                        <img src="/static/images/icon_event.svg" alt="">
+                        <span>系统公告</span>
+                    </div>
+            </div>
+            <div class="index">
+                <div id="index_1" class="index_li">
+                {% for item in index %}
+                    {% if item.classify == True %}
+                    <li name="{{ item.name }}" {% if item.name not in ifBR %}class = "breakingnews"{% endif %}>
+                        <div class="index_hover"></div>
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">{{ item.time.0 }}</span>
+                            <span class="index_li_month scaleable">{{item.time.1}}月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>{{item.title.0}}</span><br>
+                            <span>{{item.title.1}}</span>
+                        </div>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                </div>
+                <div id="index_2" class="index_li">
+                {% for item in index %}
+                    {% if item.classify == False %}
+                    <li name="{{ item.name }}" {% if item.name not in ifBR %}class = "breakingnews"{% endif %}>
+                        <div class="index_hover"></div>
+                        <div class="index_li_time">
+                            <img class="li_left" src="/static/images/line.svg" alt="">
+                            <span class="index_li_day scaleable">{{ item.time.0 }}</span>
+                            <span class="index_li_month scaleable">{{item.time.1}}月</span>
+                        </div>
+                        <div class="index_title scaleable">
+                            <span>{{item.title.0}}</span><br>
+                            <span>{{item.title.1}}</span>
+                        </div>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+            <div class="article">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>
